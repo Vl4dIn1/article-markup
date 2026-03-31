@@ -12,6 +12,9 @@
                 <a href="/" class="logo">
                     <img src="responsive-design/2744EFD6-B878-4DCB-B0D5-526F1B233733/FF01C60E-3379-4ED9-B65C-DE7F425CF688@1x.png" alt="logo">
                 </a>
+                <button class="menu-toggle" aria-expanded="false" aria-label="Открыть меню">
+                    <span class="hamburger"></span>
+                </button>
             </div>
         </div>
         <div class="header-bottom">
@@ -58,5 +61,17 @@
             Обратите внимание на то, что функция inner() окружена лексическим окружением функции outer(), которая, в свою очередь, окружена глобальной областью видимости. Именно поэтому функция inner() может получить доступ к переменным, объявленным в функции outer() и в глобальной области видимости.
         </p>
     </article>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const btn = document.querySelector('.menu-toggle');
+                const nav = document.querySelector('.nav');
+                if (!btn || !nav) return;
+                btn.addEventListener('click', function() {
+                    const expanded = btn.getAttribute('aria-expanded') === 'true';
+                    btn.setAttribute('aria-expanded', String(!expanded));
+                    nav.classList.toggle('open');
+                });
+            });
+        </script>
 </body>
 </html>
