@@ -193,6 +193,5 @@ body {
     }
 
     .header-top, .header-bottom { padding: 6px 0; }
-    /* Hide the specific image (penultimate block) on small screens */
     .hide-mobile { display: none !important; }
 }
