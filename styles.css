@@ -20,8 +20,8 @@ body {
 }
 
 .header-container {
-    width: 700px;
-    margin: 0 auto;
+    width: 100%; 
+    margin: 20px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -30,6 +30,9 @@ body {
 .logo img {
     height: 64px;
     width: auto;
+    display: block;
+    margin: 0; 
+    padding: 0;
 }
 
 .nav {
@@ -38,8 +41,8 @@ body {
 
 .nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     display: flex;
     gap: 32px;
     width: 100%;
