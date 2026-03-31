@@ -16,7 +16,9 @@ body {
 }
 
 .header-bottom {
-    padding: 15px 0;
+    padding: 5px 0;
+    background-color: #f0f0f0;
+
 }
 
 .header-container {
